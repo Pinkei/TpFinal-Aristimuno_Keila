@@ -6,6 +6,10 @@
 
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /* css formulario : */
 .inputsContainer{
     display: flex;
@@ -17,4 +21,28 @@
 .input{
     display: flex;
     flex-direction: column;
+}
+.offcanvas {
+    z-index: 9999; /* o cualquier otro valor alto que sea superior al índice z de otros elementos en tu página */
+  }
+
+  .dropdown-menu {
+    z-index: 9999;
+  }
+
+/* productos */
+
+#lista-productos{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #333;
+}
+
+img{
+    flex-grow: 1;
+	margin: 20px;
+	max-width: 300px;
+	border: 1px solid #333;
+	padding: 0 20px;
 }
