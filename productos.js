@@ -24,7 +24,7 @@ const productos =[
     id: 4,
     name: "CONTRACURVA",
     precio: 1350,
-    role: "Esquienros para pileta con arco romano",
+    role: "Esquineros para pileta con arco romano",
     img: "/img/contacurvo.png"
   },
   {
@@ -50,27 +50,19 @@ const productos =[
   }
   
 ]
-const listaProductos = document.getElementById("lista-productos");
+let listaProductos = document.getElementById("lista-productos");
 
-productos.forEach(producto => {
-  const nuevoElemento = document.createElement("li");
+for(const dato of productos){
+let div = document.createElement("div")
 
-  const nombreProducto = document.createElement("h2");
-  nombreProducto.innerText = producto.name;
-  nuevoElemento.appendChild(nombreProducto);
+/* --------------------------ARREGLAR LO DE LOS BR ACA____________________________________________________________ */
+div.innerHTML = `<img src="${dato.img}" ><br>
+${dato.name}<br>
+${dato.precio}<br>
+${dato.role}
+`
+listaProductos.appendChild(div)
+}
 
-  const precioProducto = document.createElement("p");
-  precioProducto.innerText = `Precio: ${producto.precio}`;
-  nuevoElemento.appendChild(precioProducto);
 
-  const rolProducto = document.createElement("p");
-  rolProducto.innerText = `Rol: ${producto.role}`;
-  nuevoElemento.appendChild(rolProducto);
 
-  const imagenProducto = document.createElement("img");
-  imagenProducto.src = producto.img;
-  imagenProducto.alt = producto.name;
-  nuevoElemento.appendChild(imagenProducto);
-
-  listaProductos.appendChild(nuevoElemento);
-});

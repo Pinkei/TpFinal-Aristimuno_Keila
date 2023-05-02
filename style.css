@@ -1,13 +1,14 @@
-*{padding: 0;
-    margin: 0;
+*{
     font-family: sans-serif;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.491);
+     text-decoration: none; 
+    /* color: rgba(0, 0, 0, 0.491); */
+    
 
 }
 
 body {
 	overflow-x: hidden;
+    background-color: #5B8FB9;
 }
 
 /* css formulario : */
@@ -22,21 +23,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-.offcanvas {
-    z-index: 9999; /* o cualquier otro valor alto que sea superior al índice z de otros elementos en tu página */
-  }
 
-  .dropdown-menu {
-    z-index: 9999;
-  }
+
 
 /* productos */
 
 #lista-productos{
-    display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	color: #333;
+    display: inline-block; 
+     display: block; 
+	/* flex-wrap: wrap;  */
+	color: #03001C;
 }
 
 img{
@@ -46,3 +42,4 @@ img{
 	border: 1px solid #333;
 	padding: 0 20px;
 }
+
