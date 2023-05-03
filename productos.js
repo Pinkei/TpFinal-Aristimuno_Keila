@@ -64,5 +64,20 @@ ${dato.role}
 listaProductos.appendChild(div)
 }
 
+/**Traigo todos los elementos del HTML */
+const sectionCarrito = document.querySelector('#cart-seccion')
+const carritoContainer = document.querySelector('#carrito-container')
+const carritoDiv = document.querySelector('#carrito')
+const btnSeguir = document.querySelector('#btnSeguir')
+const btnPagar = document.querySelector('#btnPay')
+const btnVaciar = document.querySelector('#btnVaciar')
+const btnCarrito = document.querySelector('#openCarrito')
+const contadorCarrito = document.querySelector('#contadorCarrito')
 
+/* NO PUEDO HACER METER LOS BOTONES DLE CARRITO ADENTRO DEL BOTON DE CARRITO */
+/* carrito-container
+openCarrito */
 
+openCarrito.addEventListener('click', () => {
+  carrito-Container.classList.toggle('hidden-cart')
+})
